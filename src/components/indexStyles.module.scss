@@ -1,4 +1,22 @@
+.fourOhFour {
+    display: block;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
 
+    h1 {
+        font-weight: bold;
+        font-size: 3em;
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        padding-bottom: 0.5em;
+        line-height: 1.5;
+
+    }
+
+}
 
 
 .ul {
