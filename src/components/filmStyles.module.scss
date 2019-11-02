@@ -1,0 +1,153 @@
+
+.h1 {
+    font-size: 1.75em;
+    font-weight: 400;
+    letter-spacing: .125rem;
+    span {
+        padding: 0 0.25em;
+        //background: black;
+        //color: #efefef;
+        border: solid .08em black;
+        color: black;
+    }
+    @media(max-width: 600px){
+        font-size: 1.2em;
+    }
+}
+
+.h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+
+
+.p {
+    font-size: 1em;
+    font-weight: 100;
+
+}
+
+.landscape {
+    max-width: 100%;
+}
+
+.portrait {
+    max-width: 100%;
+}
+
+
+.text {
+    // text-align: justify;
+    @media (max-width: calc(1040px)) {
+        //padding-left: 2rem;
+    }
+}
+
+.wrapper {
+    width: 100vw;
+    // box-sizing: border-box;
+
+    @media (max-width: 600px) {
+        // width: 94vw;
+        margin: auto;
+        #head, #haxan, #uSonu {
+            width: 94vw;
+            grid-gap: .2em;
+        }
+    }
+
+    section {
+        margin: 2em auto 3.25em auto;
+    }
+}
+
+
+
+
+#head {
+    width: 94vw;
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5em;
+    grid-template-areas:
+        "a a a a a .";
+
+    #headTitle {
+        grid-area: a;
+    }
+}
+
+#haxan {
+    width: 94vw;
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5em;
+    grid-template-areas:
+        "a a a . c c"
+        "b b b . c c"
+        ". . . . c c";
+
+    #hTitle {
+        grid-area: a;
+    }
+
+    #hDesc {
+        grid-area: b;
+    }
+
+    .hImg {
+        grid-area: c;
+    }
+
+    @media (max-width: 600px) {
+        #haxan {
+            grid-template-areas:
+                "a a . . . ."
+                "b b b b c c"
+                ". . . . c c"
+                ". . . . c c ";
+        }
+    }
+}
+
+#uSonu {
+    width: 94vw;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5em;
+    grid-template-areas:
+        "a a a a . ."
+        "b b b b . ."
+        "c c c c . ."
+        ". . d d d d"
+        "e e e e . .";
+
+    #sTitle {
+        grid-area: a;
+    }
+
+    #sDesc {
+        grid-area: b;
+    }
+
+    .sonu1 {
+        grid-area: c;
+    }
+
+    .sonu2 {
+        grid-area: d;
+    }
+
+    .sonu3 {
+        grid-area: e;
+    }
+}
