@@ -22,8 +22,11 @@ const CommercialPage = ({data}) => (
                 <section className={styles.heronPreston}>
                     <h2 className={styles.hpTitle + " " + styles.h2}>HERON PRESTON x UGG</h2>
                     <p className={styles.hpDescription  + " " + styles.p}>Heron Preston and UGG collaboration photo and video campaign.</p>
-                    <Img fluid={data.hp1.childImageSharp.fluid} className={styles.hp1 + ' ' + styles.landscape} alt="" />
-                    <Img fluid={data.hp2.childImageSharp.fluid} className={styles.hp2 + ' ' + styles.landscape} alt="" />
+                    <Img fluid={data.hp1.childImageSharp.fluid}
+                        className={styles.hp1 + ' ' + styles.landscape}
+                        alt=""
+                        loading="eager" />
+                    <Img fluid={data.hp2.childImageSharp.fluid} className={styles.hp2 + ' ' + styles.landscape} alt="" loading="eager" />
                     <Img fluid={data.hp3.childImageSharp.fluid} className={styles.hp3 + ' ' + styles.landscape} alt="" />
                     <Img fluid={data.hp4.childImageSharp.fluid} className={styles.hp4 + ' ' + styles.landscape} alt="" />
                     <Img fluid={data.hp5.childImageSharp.fluid} className={styles.hp5 + ' ' + styles.landscape} alt="" />
