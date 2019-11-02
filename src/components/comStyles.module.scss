@@ -1,0 +1,209 @@
+
+
+    .h1 {
+        font-size: 1.75em;
+        font-weight: 400;
+        letter-spacing: .125rem;
+
+        span {
+            padding: 0 0.25em;
+            border: solid .08em black;
+            color: black;
+        }
+        @media(max-width: 600px){
+            font-size: 1.2em;
+        }
+    }
+
+    .h2 {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+
+    .p {
+        font-size: 1em;
+        font-weight: 100;
+
+    }
+
+    .landscape {
+        max-width: 100%;
+    }
+
+    .portrait {
+        max-width: 100%;
+    }
+
+    .text {
+        @media (max-width: calc(1040px)) {
+            //padding-left: 2rem;
+        }
+    }
+
+
+    .main {
+        width: 100vw;
+        overflow-x: hidden;
+        box-sizing: border-box;
+
+
+        section {
+            margin: 2em auto 3.25em auto;
+        }
+
+        .head {
+            width: 100vw;
+            max-width: 1000px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 1.5em;
+            grid-template-areas:
+                "a a a a a a"
+                "b b b b . .";
+
+            .headTitle {
+                grid-area: a;
+                line-height: 2em;
+            }
+
+            .headDescription {
+                grid-area: b;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .main {
+            width: 94vw;
+            margin: auto;
+            .head, .heron-preston, .karlieKloss {
+                width: 94vw;
+                grid-gap: .75em;
+            }
+
+            .head {
+                grid-template-areas:
+                    "a a a a a a"
+                    "b b b b b b";
+                grid-gap: 2em;
+            }
+
+            .heronPreston {
+                grid-template-areas:
+                    "a a a a a a"
+                    "b b b b b b"
+                    "c c c c c ."
+                    ". d d d d d"
+                    "e e e . . ."
+                    "e e e f f f"
+                    "g g g f f f"
+                    "g g g . . .";
+            }
+
+            .karlieKloss {
+                grid-template-areas:
+                    "a a a a a a"
+                    "b b b b . ."
+                    "c c c c c c"
+                    "d d d d d d"
+                    "e e e e e e "
+                    "f f f f f f";
+
+            }
+        }
+    }
+
+.karlieKloss {
+    width: 100vw;
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5em;
+    grid-template-areas:
+        "a a a a a a"
+        "b b b b . ."
+        ". c c c c ."
+        ". . d d d d"
+        ". e e e e . "
+        ". . f f f f";
+
+    .kkTitle {
+        grid-area: a;
+    }
+
+    .kkDescription {
+        grid-area: b;
+    }
+
+    .kk1 {
+        grid-area: c;
+    }
+
+    .kk2 {
+        grid-area: d;
+    }
+
+    .kk3 {
+        grid-area: e;
+    }
+
+    .kk4 {
+        grid-area: f;
+    }
+
+}
+
+
+
+
+.heronPreston {
+    width: 100vw;
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5em;
+    grid-template-areas:
+        "a a a a . ."
+        "b b b b . ."
+        "c c c c . ."
+        ". . d d d d"
+        "e e e . . ."
+        "e e e f f f"
+        "g g g f f f"
+        "g g g . . .";
+
+    .hpTitle {
+        grid-area: a;
+    }
+
+    .hpDescription {
+        grid-area: b;
+    }
+
+    .hp1 {
+        grid-area: c;
+    }
+
+    .hp2 {
+        grid-area: d;
+    }
+
+    .hp3 {
+        grid-area: e;
+    }
+
+    .hp4 {
+        grid-area: f;
+    }
+
+    .hp5 {
+        grid-area: g;
+    }
+
+}

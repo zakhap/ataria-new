@@ -2,18 +2,15 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-// import Layout from "../components/layout"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/header"
 
 import "../components/all.scss"
 import styles from "../components/aboutStyles.module.scss"
 
 const AboutPage = ({data}) => (
-    <div>
+    <Layout>
         <SEO title="About" />
-
-        <Header />
 
         <main className={styles.aboutWrapper}>
             <article className={styles.atariaDescription}>
@@ -56,7 +53,7 @@ const AboutPage = ({data}) => (
                 </p>
 
         </main>
-    </div>
+    </Layout>
 )
 
 export default AboutPage
