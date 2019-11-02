@@ -1,0 +1,95 @@
+
+
+
+    .aboutWrapper {
+        margin: 0 auto;
+        display: grid;
+        box-sizing: border-box;
+        width: 100vw;
+        padding: 20px;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-gap: 1.75em;
+        grid-template-areas:
+            "ataria-description"
+            "hannah-image"
+            "hannah-description"
+            "daniel-image"
+            "daniel-description";
+
+        @media (min-width: 750px) {
+            width: 700px;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1em;
+            grid-template-areas:
+                "ataria-description ataria-description"
+                "hannah-image hannah-description"
+                "daniel-description daniel-image";
+        }
+
+        .atariaDescription {
+            grid-area: ataria-description;
+            padding: 1.25em;
+            margin: 0 auto;
+            margin-bottom: 1em;
+            p {
+                font-weight: 300;
+                max-width: 500px;
+            }
+        }
+
+        .bioText {
+            font-size: 1em;
+            font-weight: 100;
+        }
+
+        .hannahImage {
+            grid-area: hannah-image;
+            margin: auto;
+
+            width: 80vw;
+            max-width: 280px;
+            object-fit: scale-down;
+
+            -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
+            box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
+
+        }
+        .hannahBio {
+            grid-area: hannah-description;
+            margin: auto;
+            padding: 1.25em;
+        }
+
+        .danielImage {
+            grid-area: daniel-image;
+            margin: auto;
+
+            width: 80vw;
+            max-width: 280px;
+            // object-fit: scale-down;
+
+            -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
+            box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2);
+        }
+
+        .danielBio {
+            grid-area: daniel-description;
+            margin: auto;
+            padding: 1.25em;
+
+        }
+
+        img {
+
+        }
+
+        p {
+            text-align: justify;
+            max-width: 550px;
+        }
+
+    }

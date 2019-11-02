@@ -2,16 +2,24 @@ module.exports = {
   siteMetadata: {
     title: `Ataria Pictures`,
     description: `Ataria Pictures produce 360º and 180º shorts and documentaries in virtual reality, as well as feature films, commercials and web content.`,
-    author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Roboto:900,600,400,300,100', 'Droid Serif']
+        }
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
