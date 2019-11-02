@@ -11,7 +11,7 @@ const Header = () => (
         <Link to="/"
             className={styles.logo}>
           <img src={logo}
-               />
+               alt='logo' />
         </Link>
     	<ul className={styles.menuItems}>
     		<li><Link to="/about"><h1>ABOUT</h1></Link></li>

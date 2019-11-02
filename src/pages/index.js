@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
 
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import "../components/all.scss"
@@ -17,7 +16,7 @@ const IndexPage = ({data}) => (
 
         <main className={styles.main}>
             <section className={styles.logo}>
-                <img src={logo} />
+                <img src={logo} alt='logo' />
             </section>
 
             <section className={styles.nav}>
@@ -38,7 +37,7 @@ const IndexPage = ({data}) => (
             </section>
         </main>
         <figure className={styles.figure}>
-            <img className={styles.basquiat} src={basquiat}/>
+            <img className={styles.basquiat} src={basquiat} alt='basquiat'/>
         </figure>
     </div>
 )
