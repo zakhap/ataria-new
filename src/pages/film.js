@@ -24,7 +24,7 @@ const FilmPage = ({data}) => (
                     mercy of a witch.  Directed by <a href="https://www.mikefontainestudio.com/hax/">Mike Fontaine</a>, premiered
                     at <a href="https://sitgesfilmfestival.com/eng/film?id=10005589">Sitges Film Festival 2018</a> and screened at thirteen other
                     festivals in North America and Europe.</p>
-                <Img fluid={data.haxan.childImageSharp.fluid} alt="" className={styles.hImg} />
+                <Img fluid={data.haxan.childImageSharp.fluid} alt="" className={styles.hImg} critial="true" />
             </section>
 
 
