@@ -49,6 +49,7 @@ const VrPage = ({data}) => (
                 <h1 className={styles.lrTitle + ' ' + styles.h1v }> Land Rover–Uncharted Discoveries </h1>
         		<p className={styles.lrDesc + ' ' + styles.pv }> A NYTimes T-brand Studio</p>
     			<iframe
+                    title="iFrame Video"
         			src="https://www.youtube.com/embed/bUfBOQ1YX-o"
         			frameborder="0"
                     className={styles.lrMovie}
