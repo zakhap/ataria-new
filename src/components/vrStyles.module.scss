@@ -1,0 +1,233 @@
+.h1v {
+    font-size: 1.75em;
+    font-weight: 400;
+    letter-spacing: .125rem;
+    span {
+        padding: 0 0.25em;
+        border: solid .08em black;
+        color: black;
+    }
+    @media(max-width: 600px){
+        font-size: 1.2em;
+    }
+}
+
+.h2v {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.pv {
+    font-size: 1em;
+    font-weight: 100;
+
+}
+
+
+.headVR {
+    width: 94vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5em;
+    grid-template-areas:
+        "a a a a a .";
+
+    .headTitleVR {
+        grid-area: a;
+    }
+
+    // #head-description {
+    //     grid-area: b;
+    // }
+}
+
+.lucidita {
+    width: 94vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5em;
+    grid-template-areas:
+        "a a a a . ."
+        "b b b b . ."
+        ". . c c c c"
+        ". d d d d .";
+
+    .lTitle {
+        grid-area: a;
+    }
+
+    .lDesc {
+        grid-area: b;
+        margin-bottom: 1em;
+    }
+
+    .l1 {
+        grid-area: c;
+        margin-bottom: 2em;
+    }
+
+    .l2 {
+        grid-area: d;
+    }
+}
+
+.comeIntoMe {
+    width: 94vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5em;
+    grid-template-areas:
+        "a a a a . ."
+        "b b b b . ."
+        ". c c c c ."
+        ". . d d d d";
+
+    .cimTitle {
+        grid-area: a;
+    }
+
+    .cimDesc {
+        grid-area: b;
+        margin-bottom: 1em;
+    }
+
+    .cim1 {
+        grid-area: c;
+        margin-bottom: 2em;
+    }
+
+    .cim2 {
+        grid-area: d;
+    }
+}
+
+.clown {
+    width: 94vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5em;
+    grid-template-areas:
+        "a a a a . ."
+        "b b b b . ."
+        ". . c c c c";
+
+    .cTitle {
+        grid-area: a;
+    }
+
+    .cDesc {
+        grid-area: b;
+        margin-bottom: 1em;
+    }
+
+    .c1 {
+        grid-area: c;
+        margin-top: 1em;
+    }
+}
+
+.landRover {
+    width: 100vw;
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5em;
+    grid-template-areas:
+        "a a a a . ."
+        "b b b b . ."
+        ". c c c c .";
+
+    .lrTitle {
+        grid-area: a;
+    }
+
+    .lrDesc {
+        grid-area: b;
+        margin-bottom: 1em;
+    }
+
+    .lrMovie {
+        grid-area: c;
+        margin-top: 1em;
+    }
+
+    @media(max-width: 780px) {
+        iframe {
+            width: 66vw !important;
+            height: 33vw !important;
+        }
+        grid-template-areas:
+             "a a a a . ."
+             "b b b b . ."
+             "c c c c c c";
+    }
+}
+
+
+.wrapper {
+    width: 94vw;
+
+    section {
+        padding: 0 3vw;
+        margin: 2em auto 3.25em auto;
+    }
+}
+
+// @media (max-width: 600px) {
+//         .head, .lucidita, .comeIntoMe, .clown, .landRover {
+//             width: 94vw;
+//             grid-gap: .7em;
+//         }
+//         .lucidita {
+//             grid-template-areas:
+//                 "a a a a . ."
+//                 "b b b b b ."
+//                 ". c c c c c"
+//                 "d d d d d .";
+//         }
+//         .comeIntoMe {
+//             grid-template-areas:
+//                 "a a a a . ."
+//                 "b b b b b b"
+//                 "c c c c c ."
+//                 ". d d d d d";
+//         }
+//         .clown {
+//             grid-template-areas:
+//                 "a a a a . ."
+//                 "b b b b b ."
+//                 ". c c c c c";
+//         }
+//         .landRover {
+//             iframe{
+//                 width: 300px !important;
+//                 height: 150px !important;
+//             }
+//             grid-template-areas:
+//                 "a a a a . ."
+//                 "b b b b . ."
+//                 "c c c c c c";
+//         }
+// }

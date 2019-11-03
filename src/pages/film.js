@@ -10,7 +10,7 @@ import styles from "../components/filmStyles.module.scss"
 
 const FilmPage = ({data}) => (
     <Layout >
-        <SEO title="About" />
+        <SEO title="Film" />
 
         <main className={styles.wrapper}>
             <section id={styles.head}>
