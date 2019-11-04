@@ -8,15 +8,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
+import {ParallaxProvider} from "react-scroll-parallax"
 
 const Layout = ({ children }) => {
 
   return (
     <>
-      <Header />
-      <div>
-        <main>{children}</main>
-      </div>
+    <ParallaxProvider>
+        <Header />
+        <div>
+            <main>{children}</main>
+        </div>
+    </ParallaxProvider>
     </>
   )
 }

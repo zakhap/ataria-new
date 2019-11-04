@@ -5,9 +5,11 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import Header from "../components/header"
+import { Parallax } from "react-scroll-parallax"
 
 import "../components/all.scss"
 import styles from "../components/comStyles.module.scss"
+
 
 const CommercialPage = ({data}) => (
     <Layout>
@@ -28,7 +30,9 @@ const CommercialPage = ({data}) => (
                         loading="eager" />
                     <Img fluid={data.hp2.childImageSharp.fluid} className={styles.hp2 + ' ' + styles.landscape} alt="" loading="eager" />
                     <Img fluid={data.hp3.childImageSharp.fluid} className={styles.hp3 + ' ' + styles.landscape} alt="" />
-                    <Img fluid={data.hp4.childImageSharp.fluid} className={styles.hp4 + ' ' + styles.landscape} alt="" />
+                    <Parallax className={styles.hp4} y={[0, 40]}>
+                        <Img fluid={data.hp4.childImageSharp.fluid} className={styles.hp4 + ' ' + styles.landscape} alt="" />
+                    </Parallax>
                     <Img fluid={data.hp5.childImageSharp.fluid} className={styles.hp5 + ' ' + styles.landscape} alt="" />
                 </section>
 
